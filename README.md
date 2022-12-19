@@ -26,13 +26,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+A: The .map() and .filter() return a new array without manipulating the original. The .map() prototype can be used to convert and change the initial data. The .filter() prototype evaluates data and only includes it in a new array if it is true. The .reduce() does not return a new array, instead a single value.  Commonly it is used for multiplication or addition but it is not exclusive to these operations.    
+
 2. Explain the difference between a callback and a higher order function.
+
+A: While a callback is a function that is passed as an arguement to another function, a higher order function is a function that receives a function as an arguement.  Callback is given and higher order gets. 
 
 3. Explain what a closure is.
 
+A: a closure is when an inner function takes defined variables from outside its scope from an outer function 
+
 4. Describe the four principles of the 'this' keyword.
 
+A:  Principle 1 is window binding. If 'this' has not been given context it will return the window or a global object. 
+    Principle 2 is implicit binding for objects with methods.  Upon invocation 'this' will look to the left of the dot and take that as 'this'. 
+    Principle 3 is explicit binding. We can use .call, .bind and .apply to tell a function what 'this' should be referring to. 
+    Principle 4 is new binding. In the case of invoking a function with the new keyword, 'this' is bound to the constructed object being created.
+
 5. Why do we need super() in an extended class?
+
+A: The super() receives the information being extended from the parent class. It allows the child class to access the parent class' attributes. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
